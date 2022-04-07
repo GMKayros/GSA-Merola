@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #ffeedd;
+}
+
+/*Menú de Navegación*/
+.BarraNavegacion{
+    width: 1100px;
+    margin: 30px auto;
+    margin-top: 10px;
+    background-color: #6247aa;
+}
+.BarraNavegacion ul{
+    list-style: none;
+}
+
+.BarraNavegacion .logoNav{
+    width: 60px;
+    height: 60px;
+    
+}
+
+.Menu > li{
+    position: relative;
+    display: inline-block;
+}
+.Menu img{
+    width: 150px;
+}
+.Menu>li>a{
+    display: block;
+    padding: 15px 20px;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.Menu li a:hover{
+    color: #f20089;
+    transition: all .3s;
+}
+.SubMenu{
+    position: absolute;
+    width: 250%;
+    background-color: #6247aa;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.SubMenu li a{
+    display: block;
+    padding: 5px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.SubMenu li a:hover{
+    color: #f20089;
+    transition: all .3s;
+}
+.Menu li:hover .SubMenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.Encabezado{
+    text-align: center;
+}
+.logo {
+    width: 150px;
+}
+.titulo{
+    width: 1000px;
+}
+.FotoInicio{
+    text-align: center;
+}
+.FotoInicio img{
+    width: 1400px;
+    border-radius: 15px;
+    border: solid #6247aa 5px;
+}
+.Actividades{
+    text-align: center;
+}
+
+.TablaActividades{
+    margin: auto;
+    background-color: #dec9e9;
+}
+.TablaActividades img{
+    width: 130px;
+}
+.pie{
+    font-style:italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.tituloFormulario{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: larger;
+}
+.formulario{
+    padding: 25px;
+    font-size: large;
+}
+.queresParticipar{
+    text-align: center;
+}
+.contenedorGaleria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+}
+.imagen{
+    width: 100%;
+}
+.tituloRamas{
+    text-align: center;
+}
+/*Manada*/
+.manada{
+    background-color: #f4e285;
+    padding: 20px;
+}
+.portadaManada{
+    width: 20%;
+    float: left;
+    border: solid #ff7d00 5px;
+    margin-right: 20px;
+    }
+
+.textoManada{
+    font-size: larger;
+}
+.textoManada3{
+    font-style: italic;
+}
+.leyManada {
+    text-align: center;
+    font-size: large;
+}
+/*Unidad*/
+.unidad{
+    background-color: #6a994e;
+    padding: 20px;
+}
+.portadaUnidad{
+    width: 20%;
+    float: left;
+    border: solid #3a5a40 5px;
+    margin-right: 20px;
+    }
+.puntosUnidad{
+    padding: 10px 0px 10px 200px;
+    margin-left: 200px;
+    font-size: larger;
+}
+.lista{
+    padding-left: 40px;
+}
+/*Caminantes*/
+.caminantes{
+    background-color: #99c1de;
+    padding: 20px;
+}
+.portadaCaminantes{
+    width: 20%;
+    float: left;
+    border: solid #184e77 5px;
+    margin-right: 20px;
+}
+/*Rovers*/
+.rovers{
+    background-color: #e5989b;
+    padding: 20px;   
+}
+.portadaRovers{
+    width: 20%;
+    float: left;
+    border: solid #6a040f 5px;
+    margin-right: 20px;
+}
+
+/*Tienda*/
+.contenedorTienda{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+    width: 100%;
+}
+.boton{
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: rgb(98, 23, 23);
+    border-radius: 10px;
+    text-decoration: none;
+}
+.boton__texto{
+    color: white;
+    font-size: 25px;
+}
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/Aconcagua Logo.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Grupo Scout Aconcagua - Inscripciones</title>
+</head>
+<body>
+    <header>
+        <nav class="BarraNavegacion">
+            <img class="logoNav" src="../images/Aconcagua Logo.png" alt="">
+            <ul class="Menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Nosotros</a> <!--Menu con SubMenu-->
+                    <ul class="SubMenu">
+                        <li class="manadaMenu"><a href="../pages/manada.html">Manada Flor Roja</a></li>
+                        <li class="unidadMenu"><a href="../pages/unidad.html">Unidad Scout Aconcagua</a></li>
+                        <li class="caminantesMenu"><a href="../pages/caminantes.html">Comunidad de Caminantes Bragado</a></li>
+                        <li class="roversMenu"><a href="../pages/rovers.html">Comunidad Rover Mictlán</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/galeria.html">Galería</a></li>
+                <li><a href="../pages/faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="../pages/inscripciones.html">Inscripciones</a></li>
+                <li><a href="../pages/tienda.html">Tienda</a></li>
+                <li><a href="https://www.scouts.org.ar/" target="_blank">Scouts de Argentina</a></li>
+            </ul>
+            <div class="redes">
+                <a href="https://www.facebook.com/gruposcoutaconcagua/" target="_blank"><img class="fb" src="../images/fb.png" alt=""></a>
+                <a href="https://www.instagram.com/aconcagua706/?hl=es" target="_blank"><img class="ig" src="../images/ig.png" alt=""></a>
+                <a href="https://wa.me/541150465198" target="_blank"><img class="ws" src="../images/ws.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    
+    <h1 class="tituloPag">¿Querés participar de nuestro Grupo? ¡Inscribite!</h1>
+    
+    <form action="procesar.php" method="post" >
+        <fieldset class="formulario">
+            <legend class="tituloFormulario">Formulario de Inscripción</legend>
+            <br>
+        <p>
+            <label for="Nombre">Ingresá tu Nombre: </label>
+            <input type="text" name="Nombre" placeholder="Ej: Juan" required>
+        </p>
+        <br>
+        <p>
+            <label for="Apellido">Ingresá tu Apellido: </label>
+            <input type="text" name="Apellido" placeholder="Ej: Perez" required>
+        </p>
+        <br>
+        
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="Ej: tunombre@gmail.com" required>
+        </p>
+        <br>
+        <p>
+            <label for="telefono">Teléfono: </label>
+            <input type="tel" name="telefono" placeholder="1234567890" required>
+        </p>
+        <br>
+
+        <h4>¿A través de qué medio preferís que te contactemos?</h4>
+        <label for="medios">Email</label>
+        <input type="checkbox" name="medios" value="email">
+
+        <label for="medios">Whatsapp</label>
+        <input type="checkbox" name="medios" value="whatsapp">
+
+        <label for="medios">Llamada Telefónica</label>
+        <input type="checkbox" name="medios" value="teléfono">
+
+        <br>
+        <br>
+        
+        <h4>¿Participaste alguna vez de un grupo scout?</h4>
+        <label for="participaste">Si</label>
+        <input type="radio" name="participaste" value="si">
+
+        <label for="participaste">No</label>
+        <input type="radio" name="participaste" value="no">
+
+        <br><br>
+
+        <h4>Si tu respuesta es sí, comentanos cómo fue tu experiencia.</h4>
+        <textarea name="comentario" id="" cols="30" rows="10"></textarea><br><br>
+
+        
+        <h4>¿Tenés hermanos o familiares en el grupo?</h4>
+        <label for="familiares">Si</label>
+        <input type="radio" name="familiares" value="si">
+
+        <label for="familiares">No</label>
+        <input type="radio" name="familiares" value="no">
+
+        <br><br>
+
+        <h4>¿Qué edad tenés?</h4>
+        <select name="edad" id="">
+            <option value="7 a 10 años">7 a 10 años</option>
+            <option value="11 a 13 años">11 a 13 años</option>
+            <option value="14 a 16 años">14 a 16 años</option>
+            <option value="17 a 21 años">17 a 21 años</option>
+            <option value="22 años o más">22 años o más</option>
+        </select><br><br>
+
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar formulario">
+        <br><br>
+    </fieldset>
+    </form>
+<br>
+    <footer class="pie">
+        Grupo Scout Aconcagua está afiliado a Scouts de Argentina Asociación Civil <br>
+        Ceretti 2424, Villa Urquiza, CABA
+    </footer>
+    <br><br>
+</body>
+
+
+
+</html>
